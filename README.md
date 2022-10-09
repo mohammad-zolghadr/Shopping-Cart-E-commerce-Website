@@ -14,10 +14,6 @@ Shopping Cart : Landing Page , Product Page , Product Detail Page , Add To Cart 
 
 
 <div style="display:flex" align="center">
-<img src="https://user-images.githubusercontent.com/48680310/194779759-b723ecd2-c8f5-4e71-a690-dc84d9a25f2a.png" style="width:48%"/>
-<img src="https://user-images.githubusercontent.com/48680310/194779761-3bea2bae-6ee6-4235-9902-2b18d0619fef.png" style="width:48%"/>
+<img src="https://user-images.githubusercontent.com/48680310/194779835-3a087970-19b5-4e64-a6fb-e3e61fbc1f73.png" style="width:60%"/>
 </div>
 
-
-![Screenshot (2568)]()
-![Screenshot (2569)]()
