@@ -1,0 +1,50 @@
+.pWrapper{
+    margin-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productsContainer{
+    width: 70%;
+    margin: 30px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productsContainer h2 , .productsContainer h4{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+.searchInput{
+    width: 60%;
+}
+.searchInput input{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+::placeholder {
+    color: #ccc;
+  }  
+  :-ms-input-placeholder {
+    color: #ccc;
+  }
+  ::-ms-input-placeholder {
+    color: #ccc;
+  }
+
+  @media (min-width:768px) {
+
+    .searchInput{
+        max-width: 40%;
+    }
+    
+  }

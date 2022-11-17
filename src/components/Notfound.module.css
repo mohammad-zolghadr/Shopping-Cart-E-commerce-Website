@@ -1,0 +1,12 @@
+.nfContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nfContainer img{
+    width: 80%;
+    height: 80%;
+}

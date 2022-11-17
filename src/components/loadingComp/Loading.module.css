@@ -1,0 +1,38 @@
+.loadingWrapper{
+    margin-right: 50px;
+}
+
+
+.circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+  
+  .circleBorder {
+    position: relative;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 30%;
+    border-radius: 100%;
+    background: linear-gradient(360deg, var(--primary-color) 50%, transparent 50%), linear-gradient(0deg, var(--primary-color) 50%, lightgray 50%);
+    animation: rotate 2.5s infinite alternate;
+  }
+
+  
+@keyframes rotate{
+    0%{
+        transform : rotate(0);
+        opacity :0.8;
+    }
+    100%{
+        transform : rotate(1440deg);
+        opacity : 0.3;
+    }
+}

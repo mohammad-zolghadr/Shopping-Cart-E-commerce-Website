@@ -1,0 +1,203 @@
+main{
+    min-height: 100vh;
+    margin: 50px  auto 100px;
+}
+
+.hHeadWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #ccc;
+    /* padding: 20px; */
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+
+.hHLowOpacityCover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/shop.jpg");
+    background-size: cover;
+    background-color: #222;
+}
+
+.hHLowOpacityCover span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+    z-index: 0;
+}
+
+.hHeadWrapper h2{
+    margin: 10px;
+    color: #eee;
+    font-size: 1.8rem;
+}
+
+.hHeadWrapper p{
+    margin: 20px 10px;
+    text-align: justify;
+    color: #aaa;
+    font-size: 0.85rem;
+    line-height: 140%;
+}
+
+.hHBtns a{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 10px 25px;
+    margin: 20px 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid var(--secondary-color) ;
+}
+
+.hHBtns a:nth-child(2){
+    background-color: transparent;
+    color:var(--secondary-color);
+}
+
+
+.hHeadWrapper a:hover{
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.hHeadWrapper > div{
+    margin: 10px 20px;
+    order: 1;
+}
+
+.hHeadWrapper img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 10px #666;
+}
+
+
+strong{
+    color: var(--secondary-color);
+}
+
+
+.hServices{
+    margin: 40px;
+}
+
+.hServices h2{
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+
+.hsSectionWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hsSection{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 250px;
+}
+.hsSection img{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    width: 40px;
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.hsSection > div{
+    flex: 1 1 200px;
+}
+
+.hsSection a{
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.hsSection p{
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.hsSection a:hover{
+    opacity: 0.5;
+}
+
+.hContact {
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hContact h2{
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hContact textarea{
+    display: block;
+    width: 80%;
+    min-height: 250px;
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 20px;
+}
+.hContact button{
+    background-color: var(--active-color);
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hContact button:hover{
+    box-shadow: 0 0 10px var(--active-color);
+}
+
+
+@media (min-width:768px)
+{
+    .hHeadWrapper{
+        flex-direction: row;
+    }
+    .hHeadWrapper > div{
+        order: 0;
+    }
+
+    .hContact{
+        max-width: 60%;
+        margin: auto;
+    }
+    
+}

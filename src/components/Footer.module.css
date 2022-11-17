@@ -1,0 +1,83 @@
+footer{
+    background-color: #323232;
+    padding: 30px;
+}
+
+footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fSection{
+    flex: 1 1 200px;
+    margin: 5px;
+}
+
+.fSection > a{
+    display: block;
+}
+
+.fSection h3{
+    color: #ccc;
+}
+
+.fSection a {
+    color: #999;
+    font-size: 0.8rem;
+    margin: 10px 5px;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.fSection img{
+    width: 20px;
+}
+
+.fSection a:hover , .fSection button:hover , .fCopyright a:hover{
+    opacity: 0.5;
+}
+
+.fSection span{
+    color: var(--secondary-color);
+    background-color:#434343;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    margin: 10px 5px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.fSection input{
+    background-color: #999;
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+}
+
+.fSection button{
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    margin: 5px;
+    box-shadow: 0 0 5px  var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.fCopyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.fCopyright a{
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: 0.3s;
+}

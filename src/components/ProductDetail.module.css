@@ -1,0 +1,102 @@
+.pDetailContainer{
+    width: 90%;
+    min-height: 100vh;
+    margin : 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pDetailContainer img{
+    width: 256px;
+    margin: 15px 5px;
+}
+
+.pDetailContainer h2{
+    color: #434343;
+    margin: 15px 5px;
+}
+
+.pDetailContainer p{
+    text-align: justify;
+    color: #777777;
+    margin: 10px;
+    line-height: 130%;
+}
+
+.pDetailCta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(200, 254, 255, 1);
+    background-color:rgb(225, 252, 253);
+
+} 
+.pDetailCta span{
+    color: var(--active-color);
+    font-weight: bold;
+}
+
+.pDetailCta div{
+    display: flex;
+    align-items: center;
+}
+
+.btnAdd , .btnRemove{
+    background-color: #12ab3d;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btnRemove{
+    background-color: var(--active-color);
+}
+
+.btnAdd:hover , .btnRemove:hover{
+    opacity: 0.5;
+}
+
+.btnAdd img , .btnRemove img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.qtyTemp{
+    display: inline-block;
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: rgb(1, 125, 128) !important;
+    box-shadow: 0 0 10px rgba(200, 254, 255, 1);
+    background-color:rgb(200, 254, 255);
+}
+
+@media (min-width:768px) {
+    .pDetailCta{
+        width: 80%;
+    }
+    .pDetailContainer{
+        max-width: 80%;
+    }
+}
+
+@media (min-width:992px) {
+    .pDetailContainer{
+        max-width: 50%;
+    }
+}

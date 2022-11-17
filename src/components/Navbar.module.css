@@ -1,0 +1,86 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo{
+    width: 40px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a{
+    margin: 15px;
+color: #333;
+font-weight: bold;
+font-size: 0.9rem;
+transition: 0.3s;
+}
+
+li a:hover{
+    opacity: 0.5;
+}
+
+.cartWrapper{
+    transition: 0.3s;
+    position: relative;
+}
+
+.cartWrapper:hover{
+    opacity: 0.5;
+}
+
+nav img{
+    width: 35px;
+    padding-right: 7px;
+}
+
+.icHome{
+    width: 30px;
+}
+
+.cartWrapper span{
+    background-color: var(--active-color);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icAnim{
+    display: inline-block;
+    position: absolute;
+    bottom: -2px !important;
+    right: -2px !important;
+    width: 20px;
+    height: 20px;;
+    animation: scaleIn 1s infinite cubic-bezier(.36, .11, .89, .32);
+
+}
+@keyframes scaleIn{
+    from{
+        transform : scale(0.5 , 0.5);
+        opacity :1;
+    }
+    to{
+        transform : scale(2.5 , 2.5);
+        opacity : 0;
+    }
+}
